@@ -1,0 +1,57 @@
+body{
+margin: 0%;
+padding: 0;
+}
+.font-color{
+    color: #26599F;
+
+}
+.custom-background{
+    background: #ebeaea;
+
+}
+.custom-background-image {
+    background-image: url('background.png');
+    background-size: cover;
+  }
+  
+  
+  @media screen and (max-width: 830px) {
+    .custom-display {
+      display: none;
+    }
+    .custom-width{
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1536px) {
+    .custom-display {
+      display: none;
+    }
+    .custom-width{
+      width: 100%;
+      }
+    
+  }
+
+  @media screen and (max-width: 1078px) {
+    .custom-flex{
+      display: flex !important;
+      flex-direction: column !important;
+    }
+     .custom-div-width{
+      width: 100% !important;
+     }
+    
+  }
+  @media screen and (max-width: 685px) {
+    .custom-flex-{
+      display: flex !important;
+      flex-direction: column !important;
+    }
+     .custom-div-width{
+      width: 100% !important;
+     }
+    
+  }

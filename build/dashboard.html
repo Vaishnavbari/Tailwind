@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="w-full h-screen flex flex-row shadow max-h-full">
+
+
+        <div class="w-1/6 h-screen shadow flex flex-col bg-white justify-evenly custom-display">
+
+            <div class="flex items-center justify-center m-5">
+                <img src="logo.png" alt="logo" class="h-20">
+            </div>
+            
+            <div class="flex flex-col items-center justify-center m-5 mt-4 gap-6">
+                <div class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                        <img src="dashboard.png" alt="Dashboard">
+                        <label for="Dashboard"> Dashboard </label>
+                </div>
+
+                <div class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                    <img src="dashboard.png" alt="Inventory">
+                    <label for="Inventory"> Inventory </label>
+                 </div>
+              
+                 <div class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                    <img src="dashboard.png" alt="Orders">
+                    <label for="Orders"> Orders </label>
+                </div>
+
+                <div class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                    <img src="dashboard.png" alt="Customer">
+                    <label for="Customer"> Customer </label>
+                </div>
+
+                <div class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                    <img src="dashboard.png" alt="Report">
+                    <label for="Report"> Report </label>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center mt-20">
+                <div class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                    <img src="dashboard.png" alt="Help">
+                    <label for="Help"> Help </label>
+                </div>
+            </div>
+
+            <div class="flex gap-4 items-center justify-center mt-10  ">
+                <img src="settings.png" alt="Settings">
+                <label for="Settings"> Settings </label>
+            </div>
+
+            <div class="flex gap-4 items-center justify-center mt-10 ">
+                <img src="logout.png" alt="logout">
+                <label for="logout"> Log out </label>
+            </div>
+
+        </div>
+
+        <div class="bg-slate-100 w-5/6 flex flex-col custom-width h-screen">
+
+        <div class="w-full flex">
+            <div class="w-1/2 flex flex-row-reverse">
+                <div class="relative h-12 m-5" style="width: 70%;">
+                    <input class="w-full h-full pl-12 pr-4 rounded-3xl shadow-2xl border-2 border-gray-700" type="search" id="search" name="search" placeholder="Search...">
+                    <img class="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6" src="search.png" alt="Search Icon">
+                </div>
+            </div>
+            <div class="w-1/2 flex flex-row-reverse h-12 m-5 gap-2 mr-4">
+                <img src="profile.png" alt="" srcset="">
+
+                <img src="notification.png" alt="notification" srcset="">
+             
+            </div>
+        </div>
+
+        <!-- summary div  -->
+    
+            <div class="w-full custom-background-image flex">
+
+                <div class="flex flex-col" style="width: 75%;">
+                    <div class="h-auto w-full">
+                        <span class="text-2xl font-bold" style="padding:2rem;">Sales Activity</span>
+                    </div>
+                    <div class="flex justify-evenly m-3 gap-4 w-full">
+                        <div class="w-1/4 flex flex-col bg-white shadow-2xl gap-4 border justify-center rounded-3xl ">
+                            <span class="font-bold ml-3 mr-4 md:text-" style="color: chocolate; align-self: flex-end ; font-size:4rem;   text-shadow: 6px 5px 7px rgb(126, 125, 125)">3001</span>
+                            <span class="text-xs mr-4" style="align-self: flex-end;">Quantity</span>  
+                            <div class="flex items-center justify-between gap-2 ml-4 mb-4 mr-4">
+                                <img src="images/product_summary.png" alt="Quantity" srcset="">
+                                <span class="text-sm">To Be Packed</span>
+                            </div>
+                        </div>
+                        
+                        <div class="w-1/4 flex flex-col bg-white shadow-2xl gap-4 border justify-center rounded-3xl">
+                            <span class="font-bold ml-3 mr-4 md:text-" style="color: chocolate; align-self: flex-end ; font-size:4rem;   text-shadow: 6px 5px 7px rgb(126, 125, 125)">3001</span>
+                            <span class="text-xs mr-4" style="align-self: flex-end;">Quantity</span>  
+                            <div class="flex items-center justify-between gap-2 ml-4 mb-4 mr-4">
+                                <img src="images/product_summary.png" alt="Quantity" srcset="">
+                                <span class="text-sm">To Be Packed</span>
+                            </div>
+                        </div>
+                        <div class="w-1/4 flex flex-col bg-white shadow-2xl gap-4 border justify-center rounded-3xl ">
+                            <span class="font-bold ml-3 mr-4 md:text-" style="color: chocolate; align-self: flex-end ; font-size:4rem;   text-shadow: 6px 5px 7px rgb(126, 125, 125)">3001</span>
+                            <span class="text-xs mr-4" style="align-self: flex-end;">Quantity</span>  
+                            <div class="flex items-center justify-between gap-2 ml-4 mb-4 mr-4">
+                                <img src="images/product_summary.png" alt="Quantity" srcset="">
+                                <span class="text-sm">To Be Packed</span>
+                            </div>
+                        </div>
+                        <div class="w-1/4 flex flex-col bg-white shadow-2xl gap-4 border justify-center rounded-3xl">
+                            <span class="font-bold ml-3 mr-4 md:text-" style="color: chocolate; align-self: flex-end ; font-size:4rem;   text-shadow: 6px 5px 7px rgb(126, 125, 125)">3001</span>
+                            <span class="text-xs mr-4" style="align-self: flex-end;">Quantity</span>  
+                            <div class="flex items-center justify-between gap-2 ml-4 mb-4 mr-4">
+                                <img src="images/product_summary.png" alt="Quantity" srcset="">
+                                <span class="text-sm">To Be Packed</span>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="w-1/4 inventorysummary flex flex-col items-center" style="margin-left: 3rem;">
+                   
+                    <div class="heading flex flex-col w-full">
+                        <span class="text-3xl font-bold" style="padding:2rem;">Inventory Summary
+                    </div>
+                    <div class="w-full" style="align-self: flex-end">
+                       <div class="w-10/12 flex items-center justify-around bg-white h-16">
+                            <span class="text-2xl font-bold"> <span style="color:rgb(83, 83, 192)">|</span>  In-Stock </span>
+                            <span class="text-3xl font-bold" style="color: rgb(255, 153, 58);">104888</span>
+                        </div>
+                        <div class="w-10/12 flex items-center justify-around bg-white h-16 mt-3">
+                            <span class="text-2xl font-bold"> <span style="color:rgb(83, 83, 192)">|</span>  In-Stock </span>
+                            <span class="text-3xl font-bold" style="color: rgb(255, 153, 58);">104888</span>
+                        </div>
+
+
+                    </div>
+                  </div>
+      </div>
+       
+
+    </div>
+    
+</body>
+</html>
