@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMXD3l2OFPyCUaSA6s/1FAoPpTDCuDx/aiT6FLh"
+            crossorigin="anonymous">
+    </head>
+    <style>
+    /* media query for laptop  */
+    @media (max-width: 1366px) {
+        .custom-display{
+            display: none !important;
+        }
+        .custom-flex-edit{
+            display: flex;
+            flex-direction: column;
+        }
+        .custom-flex-edit-width {
+            width: 100% !important;
+         }
+      
+     }
+     @media (max-width: 1200px) {
+        .main-div-flex{
+                display: flex !important;
+                flex-direction: column !important;
+            }
+         .main-div-width{
+            width: 100% !important;
+            margin-bottom: 3rem !important;
+            }
+    }
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .display_for_description {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
+
+
+</style>
+<body>
+<div class="w-full h-full flex flex-row shadow ">
+        <div
+            class="w-1/6 h-screen min-h-screen shadow flex flex-col bg-white justify-evenly custom-display   ">
+
+            <div class="flex items-center justify-center m-5">
+                <img src="logo.png" alt="logo" class="h-20">
+            </div>
+
+            <div
+                class="flex flex-col items-center justify-center m-5 mt-4 gap-6">
+                <div
+                    class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                    <img src="dashboard.png" alt="Dashboard">
+                    <label for="Dashboard"> Dashboard </label>
+                </div>
+
+                <div
+                    class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                    <img src="images/inventory.png" alt="Inventory">
+                    <label for="Inventory"> Inventory </label>
+                </div>
+
+                <div
+                    class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                    <img src="images/order.png" alt="Orders">
+                    <label for="Orders"> Orders </label>
+                </div>
+
+                <div
+                    class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                    <img src="images/customer.png" alt="Customer">
+                    <label for="Customer"> Customer </label>
+                </div>
+
+                <div
+                    class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                    <img src="images/reports.png" alt="Report">
+                    <label for="Report"> Report </label>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center mt-20">
+                <div
+                    class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                    <img src="images/help.png" alt="Help">
+                    <label for="Help"> Help </label>
+                </div>
+            </div>
+
+            <div class="flex gap-4 items-center justify-center mt-10  ">
+                <img src="settings.png" alt="Settings">
+                <label for="Settings"> Settings </label>
+            </div>
+
+            <div class="flex gap-4 items-center justify-center mt-10 ">
+                <img src="logout.png" alt="logout">
+                <label for="logout"> Log out </label>
+            </div>
+
+        </div>
+
+        <div
+            class="bg-slate-100 w-5/6 flex flex-col custom-width  custom-flex-edit-width ">
+
+            <div class="w-full flex">
+
+                <div class="w-1/2 flex flex-row">
+
+                    <div class="relative h-12 m-5" style="width: 70%;">
+                        <input
+                            class="w-full h-full pl-12 pr-4 rounded-3xl shadow-2xl border-2 border-gray-700"
+                            type="search" id="search" name="search"
+                            placeholder="Search...">
+                        <img
+                            class="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6"
+                            src="search.png" alt="Search Icon">
+                    </div>
+                </div>
+                <div
+                    class="w-1/2 flex flex-row-reverse h-12 m-5 gap-2 mr-4">
+                    <img src="profile.png" alt srcset>
+
+                    <img src="notification.png" alt="notification" srcset>
+
+                </div>
+            </div>
+            <hr class="w-full"
+                style="border: rgb(167, 163, 163) solid 0.1rem;">
+
+            <div class="w-full flex gap-3 items-center">
+                <img src="images/home.png" class="p-4">  /
+                <span class="font-semibold">Inventory</span>
+            </div>
+
+            <hr class="w-full"
+                style="border: rgb(167, 163, 163) solid 0.1rem;">
+
+            <!-- heading -->
+            <div class="heading p-3">
+                <span class="text-lg font-bold text-gray-800">Browser by Category</span>
+            </div>
+            <!-- heading -->
+            <!-- Main div -->
+            <div class="main flex flex-row flex-grow w-full p-3 justify-evenly overflow-auto main-div-flex">
+                <!-- mobile -->
+                <div  class="w-1/5 h-full main-div-width "  >
+                    <div class="heading flex items-center justify-center " style="height: 5%; background-color:#26599F40; border-radius: 20px 20px 0 0">
+                        <span class="text-lg font-bold text-gray-800">Iphone</span>
+                    </div>
+                    <div class="w-full content flex flex-col flex-grow bg-white" style="height: 90%;   border-radius: 0 0 20px 20px ;">
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description ">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/product.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly ">
+                                <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                <span class="text-base" style="align-self: center;">from</span>
+                                <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description ">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/product.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                <span class="text-base" style="align-self: center;">from</span>
+                                <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/product.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                <span class="text-base" style="align-self: center;">from</span>
+                                <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/product.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                    <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                    <span class="text-base" style="align-self: center;">from</span>
+                                    <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description ">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/product.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                <span class="text-base" style="align-self: center;">from</span>
+                                <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                    </div>
+                </div>
+                <!-- mobile -->
+
+                <!-- macbook -->
+                <div  class="w-1/5 h-full main-div-width"  >
+                    <div class="heading flex items-center justify-center " style="height: 5%; background-color: #EEA47F; border-radius: 20px 20px 0 0">
+                        <span class="text-lg font-bold text-gray-800">Macbook</span>
+                    </div>
+                    <div class="w-full content flex flex-col flex-grow bg-white" style="height: 90%;   border-radius: 0 0 20px 20px ;">
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3 ">
+                                <img src="images/macbook.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                              <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                    <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                    <span class="text-base" style="align-self: center;">from</span>
+                                    <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/macbook.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                    <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                    <span class="text-base" style="align-self: center;">from</span>
+                                    <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/macbook.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                    <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                    <span class="text-base" style="align-self: center;">from</span>
+                                    <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/macbook.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                <span class="text-base" style="align-self: center;">from</span>
+                                <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/macbook.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                    <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                    <span class="text-base" style="align-self: center;">from</span>
+                                    <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                    </div>
+                </div>
+                <!-- Macbbok -->
+
+                    <!-- ipad -->
+                    <div  class="w-1/5 h-full main-div-width"  >
+                        <div class="heading flex items-center justify-center " style="height: 5%; background-color:#9DBDBAB2; border-radius: 20px 20px 0 0">
+                            <span class="text-lg font-bold text-gray-800">ipad</span>
+                        </div>
+                        <div class="w-full content flex flex-col flex-grow bg-white" style="height: 90%;   border-radius: 0 0 20px 20px ;">
+                            <div class="bg-white w-full flex gap-3 justify-evenly display_for_description ">
+                                <div class="image flex items-center justify-center p-3">
+                                    <img src="images/ipad.png" alt="image" srcset>
+                                </div>
+                                <div class="description p-2 flex flex-col justify-evenly items-center">
+                                    <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                    <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                    <span class="text-base" style="align-self: center;">from</span>
+                                    <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                                </div>
+                            </div>
+                            <hr class="bg-black w-full border-dotted" >
+                            <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                                <div class="image flex items-center justify-center p-3">
+                                    <img src="images/ipad.png" alt="image" srcset>
+                                </div>
+                                <div class="description p-2 flex flex-col justify-evenly">
+                                    <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                    <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                    <span class="text-base" style="align-self: center;">from</span>
+                                    <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                                </div>
+                            </div>
+                            <hr class="bg-black w-full border-dotted" >
+                            <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                                <div class="image flex items-center justify-center p-3">
+                                    <img src="images/ipad.png" alt="image" srcset>
+                                </div>
+                                <div class="description p-2 flex flex-col justify-evenly">
+                                    <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                    <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                    <span class="text-base" style="align-self: center;">from</span>
+                                    <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                                </div>
+                            </div>
+                            <hr class="bg-black w-full border-dotted" >
+                            <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                                <div class="image flex items-center justify-center p-3">
+                                    <img src="images/ipad.png" alt="image" srcset>
+                                </div>
+                                <div class="description p-2 flex flex-col justify-evenly">
+                                    <span class="text-lg font-bold text-gray-800"> iPhone 15 Pro &</span>
+                                    <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                    <span class="text-base" style="align-self: center;">from</span>
+                                    <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                                </div>
+                            </div>
+                            <hr class="bg-black w-full border-dotted" >
+                            <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                                <div class="image flex items-center justify-center p-3">
+                                    <img src="images/ipad.png" alt="image" srcset>
+                                </div>
+                                <div class="description p-2 flex flex-col justify-evenly">
+                                    <span class="text-lg font-bold text-gray-800" > iPhone 15 Pro &</span>
+                                    <span class="text-lg font-bold text-gray-800" >iPhone 15 Pro Max</span>
+                                    <span class="text-base" style="align-self: center;">from</span>
+                                    <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                                </div>
+                            </div>
+                            <hr class="bg-black w-full border-dotted" >
+                        </div>
+                    </div>
+                    <!-- ipad -->
+
+                <!-- Accessories -->
+                <div  class="w-1/5 h-full main-div-width"  >
+                    <div class="heading flex items-center justify-center " style="height: 5%; background-color: #F8B04280; border-radius: 20px 20px 0 0">
+                        <span class="text-lg font-bold text-gray-800">Accessories</span>
+                    </div>
+                    <div class="w-full content flex flex-col flex-grow bg-white" style="height: 90%;   border-radius: 0 0 20px 20px ;">
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/accessories.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800" > iPhone 15 Pro &</span>
+                                <span class="text-lg font-bold text-gray-800" >iPhone 15 Pro Max</span>
+                                <span class="text-base" style="align-self: center;">from</span>
+                                <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/accessories.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800" > iPhone 15 Pro &</span>
+                                <span class="text-lg font-bold text-gray-800" >iPhone 15 Pro Max</span>
+                                <span class="text-base" style="align-self: center;">from</span>
+                                <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/accessories.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800" > iPhone 15 Pro &</span>
+                                <span class="text-lg font-bold text-gray-800">iPhone 15 Pro Max</span>
+                                <span class="text-base" style="align-self: center;">from</span>
+                                <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/accessories.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800" > iPhone 15 Pro &</span>
+                                <span class="text-lg font-bold text-gray-800" >iPhone 15 Pro Max</span>
+                                <span class="text-base" style="align-self: center;">from</span>
+                                <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                        <div class="bg-white w-full flex gap-3 justify-evenly display_for_description">
+                            <div class="image flex items-center justify-center p-3">
+                                <img src="images/accessories.png" alt="image" srcset>
+                            </div>
+                            <div class="description p-2 flex flex-col justify-evenly">
+                                <span class="text-lg font-bold text-gray-800" > iPhone 15 Pro &</span>
+                                <span class="text-lg font-bold text-gray-800" >iPhone 15 Pro Max</span>
+                                <span class="text-base" style="align-self: center;" >from</span>
+                                <span class="text-xl font-bold text-gray-800"  style="align-self: center;">$1,099</span>
+                            </div>
+                        </div>
+                        <hr class="bg-black w-full border-dotted" >
+                    </div>
+                </div>
+                <!-- Accessories -->
+
+            </div>
+
+            
+    </div>
+</div>
+</body>       
+</html>

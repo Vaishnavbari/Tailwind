@@ -12,7 +12,9 @@
 <body>
     <div class="w-full h-screen flex flex-row shadow max-h-full">
 
+
         <div class="w-1/6 h-screen shadow flex flex-col bg-white justify-evenly custom-display">
+
             <div class="flex items-center justify-center m-5">
                 <img src="logo.png" alt="logo" class="h-20">
             </div>
@@ -62,7 +64,7 @@
 
         </div>
 
-       <div class="bg-white w-5/6 flex flex-col custom-width h-screen">
+        <div class="bg-slate-100 w-5/6 flex flex-col custom-width h-screen">
 
         <div class="w-full flex">
             <div class="w-1/2 flex flex-row-reverse">
@@ -85,8 +87,9 @@
              <span class="font-semibold">Inventory</span>/
              <span class="font-semibold">View inventory</span>
         </div>
+
         <hr class="w-full" style="border: rgb(167, 163, 163) solid 0.1rem;">
-        <div class="w-full ">
+            <div class="w-full ">
                 <div class="flex justify-between" style="margin: 0 1.8rem; margin-top: 1.8rem;" >
                         <p>
                             <span class="font-semibold text-2xl">Inventory Summary</span>
@@ -100,7 +103,7 @@
                             </div>
                         </div>
                         
-                  </div>
+            </div>
 
           <div class="w-full flex flex-row custom-flex justify-between" style="padding-left: 2rem; padding-top: 1rem; padding-right: 2rem; gap: 2rem;">
 
@@ -109,6 +112,7 @@
                     <img src="images/product.png" alt="product_summary">
                 </div>
             </div>
+
 
             <div class="w-1/2 bg-white rounded-3xl shadow-2xl custom-div-width ">
                 <div class="flex gap-3 items-center justify-between" style="padding: 2rem;">
@@ -125,7 +129,7 @@
                         <p class="text-2xl font-medium">Unit Price</p>
                         <p class="text-1xl">12</p>
                       </div>
-                   <div class="flex flex-col gap-6 items-center"-2">
+                   <div class="flex flex-col gap-6 items-center">
                      <p class="text-2xl font-medium">In Stock</p>
                      <p class="text-1xl">350</p>
                    </div>
@@ -139,108 +143,121 @@
                    </div>
                   
                 </div>
+         
              </div>
   
               <div class="w-1/3 flex gap-3 custom-div-width">
-                    <div class="w-1/2 bg-white rounded-3xl shadow-2xl custom-div-width ">
-                        <div class=" w-full h-full flex flex-col items-center justify-evenly gap-4" style="padding: 2rem;">
-                            <img src="images/eye.png" alt="product_summary">
-                            <span class="font-bold text-3xl" style="font-size: 2.5rem;">1200</span>
-                            <h1 class="font-extrabold" style="font-size: 1.5rem;">Views</h1>
-                        </div>
+                <div class="w-1/2 bg-white rounded-3xl shadow-2xl custom-div-width ">
+                    <div class=" w-full h-full flex flex-col items-center justify-evenly gap-4" style="padding: 2rem;">
+                        <img src="images/eye.png" alt="product_summary">
+                        <span class="font-bold text-3xl" style="font-size: 2.5rem;">1200</span>
+                        <h1 class="font-extrabold" style="font-size: 1.5rem;">Views</h1>
                     </div>
-                    <div class="w-1/2 bg-white rounded-3xl shadow-2xl custom-div-width ">
-                        <div class=" w-full h-full flex flex-col items-center justify-evenly gap-4" style="padding: 2rem;">
-                            <img src="images/heart.png" alt="product_summary">
-                            <span class="font-bold text-3xl" style="font-size: 2.5rem;">50</span>
-                            <h1 class="font-extrabold" style="font-size: 1.5rem;">Favourite</h1>
-                        </div>
+                </div>
+                <div class="w-1/2 bg-white rounded-3xl shadow-2xl custom-div-width ">
+                    <div class=" w-full h-full flex flex-col items-center justify-evenly gap-4" style="padding: 2rem;">
+                        <img src="images/heart.png" alt="product_summary">
+                        <span class="font-bold text-3xl" style="font-size: 2.5rem;">50</span>
+                        <h1 class="font-extrabold" style="font-size: 1.5rem;">Favourite</h1>
                     </div>
-             </div>
-
+                </div>
             </div>
+
+          </div>
          </div>
-        <!-- table -->
-        <div class="relative overflow-x-auto shadow-md sm:rounded-lg" style="margin-top: 2rem; margin-left: 2rem; margin-right: 2rem;">
-            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" style="width: 100%; height: 500px;"> 
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400" style="background: #c7c4c4;     height: 3rem;">
+         <div class="relative rounded-3xl overflow-x-auto shadow-md sm:rounded-lg" style="margin-top: 2rem; margin-left: 2rem; margin-right: 2rem;">
+            <table class="w-full text-sm table-fixed rounded-3xl" style="width: 100%; height: 500px;">
+                <thead class="text-xl">
+                    <tr class="bg-white">
+                        <div class="w-full flex justify-between bg-white" style="height: 11%;">
+                            <div class="w-1/2 flex items-center">
+                                <span class="pl-4 p-3 text-xl font-semibold">Customer Order</span>
+                            </div>
+                            <div class="w-1/2 flex items-center justify-around">
+                                <div class="relative px-6 py-3 h-12">
+                                    <input class="h-full pl-12 pr-4 rounded-3xl shadow-2xl border-2 border-gray-700" type="search" id="search" name="search" placeholder="Search...">
+                                    <img class="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6" src="search.png" alt="Search Icon">
+                                </div>
+                                <div class="flex px-6 py-3 gap-2 border-gray-700 w-1/4 rounded-xl justify-evenly" style="border: black 0.1rem solid ; width:15%">
+                                    <img src="images/ci_filter.png" alt="Filter Icon ">
+                                    <label for="filter">Filter</label>
+                                </div>
+                                <div class="flex px-6 py-3 gap-2 border-gray-700 w-1/4 rounded-xl justify-evenly"  style="border: black 0.1rem solid; width:15%">
+                                    <img  src="images/sort.png" alt="Sort Icon">
+                                    <label for="sort">Sort</label>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </tr>
+                    <hr>
                     <tr>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-2 py-2" >
+                            <input type="checkbox" name="check_row" class="p-3 w-6 h-6 ">
+                        </th>
+                        <th scope="col" class="px-2 py-2">
                             Product name
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-2 py-2">
                             Color
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-2 py-2">
                             Category
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-2 py-2">
                             Price
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-2 py-2">
                             <span class="sr-only">Edit</span>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            Apple MacBook Pro 17"
+                        <th scope="row" class="px-2 py-2 text-left">
+                            <input type="checkbox" name="check_row">
                         </th>
-                        <td class="px-6 py-4 ">
+                        <td class="px-2 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Apple MacBook Pro 17"
+                        </td>
+                        <td class="px-2 py-2">
                             Silver
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-2 py-2">
                             Laptop
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-2 py-2">
                             $2999
                         </td>
-                        <td class="px-6 py-4 text-right">
+                        <td class="px-2 py-2 text-right">
                             <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                         </td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            Microsoft Surface Pro
+                        <th scope="row" class="px-2 py-2 text-left">
+                            <input type="checkbox" name="check_row">
                         </th>
-                        <td class="px-6 py-4">
+                        <td class="px-2 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Microsoft Surface Pro
+                        </td>
+                        <td class="px-2 py-2">
                             White
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-2 py-2">
                             Laptop PC
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-2 py-2">
                             $1999
                         </td>
-                        <td class="px-6 py-4 text-right">
-                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                        </td>
-                    </tr>
-                    <tr class="bg-white dark:bg-gray-800">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            Magic Mouse 2
-                        </th>
-                        <td class="px-6 py-4">
-                            Black
-                        </td>
-                        <td class="px-6 py-4">
-                            Accessories
-                        </td>
-                        <td class="px-6 py-4">
-                            $99
-                        </td>
-                        <td class="px-6 py-4 text-right">
+                        <td class="px-2 py-2 text-right">
                             <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
                         </td>
                     </tr>
                 </tbody>
-          </table>    
-
+            </table>
         </div>
-
         
-        <div class="flex justify-center mt-10 space-x-2">
+    <div class="flex justify-center mt-10 space-x-2">
             <a href="#"
                 class="ring ring-primary bg-primary/20 px-2 py-1 sm:px-4 sm:py-2 ml-1 mt-2 text-gray-600 border rounded-lg focus:outline-none">1
             </a>
@@ -255,7 +272,6 @@
             <a href="#"
                 class="px-2 py-1 sm:px-4 sm:py-2 mt-2 text-gray-600 border rounded-lg hover:bg-gray-100 focus:outline-none">21
             </a>
-        
             <a href="#"
                 class="px-2 py-1 sm:px-4 sm:py-2 mt-2 text-gray-600 border rounded-lg hover:bg-gray-100 focus:outline-none">
                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
@@ -267,7 +283,7 @@
             </a>
         </div>
         
-       </div>
+    </div>
 
     </div>
     

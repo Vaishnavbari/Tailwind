@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMXD3l2OFPyCUaSA6s/1FAoPpTDCuDx/aiT6FLh"
+            crossorigin="anonymous">
+    </head>
+    <style>
+    /* media query for laptop  */
+    @media (max-width: 1366px) {
+        .custom-display{
+            display: none !important;
+        }
+        .custom-flex-edit{
+            display: flex;
+            flex-direction: column;
+        }
+        .custom-flex-edit-width {
+            width: 100% !important;
+         }
+     }
+     /* media query for mobile  */
+     @media (max-width: 768px) {
+        .custom-flex-form{
+            display: flex;
+            flex-direction: column;
+            }
+    .custom-flex-edit-form {
+        width: 100% !important;
+        }
+        }
+
+</style>
+
+    <body>
+        <div class="w-full h-full flex flex-row shadow ">
+
+            <div
+                class="w-1/6 h-screen min-h-screen shadow flex flex-col bg-white justify-evenly custom-display   ">
+
+                <div class="flex items-center justify-center m-5">
+                    <img src="logo.png" alt="logo" class="h-20">
+                </div>
+
+                <div
+                    class="flex flex-col items-center justify-center m-5 mt-4 gap-6">
+                    <div
+                        class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                        <img src="dashboard.png" alt="Dashboard">
+                        <label for="Dashboard"> Dashboard </label>
+                    </div>
+
+                    <div
+                        class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                        <img src="images/inventory.png" alt="Inventory">
+                        <label for="Inventory"> Inventory </label>
+                    </div>
+
+                    <div
+                        class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                        <img src="images/order.png" alt="Orders">
+                        <label for="Orders"> Orders </label>
+                    </div>
+
+                    <div
+                        class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                        <img src="images/customer.png" alt="Customer">
+                        <label for="Customer"> Customer </label>
+                    </div>
+
+                    <div
+                        class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                        <img src="images/reports.png" alt="Report">
+                        <label for="Report"> Report </label>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center mt-20">
+                    <div
+                        class="flex gap-4 items-center justify-center border h-20 rounded-3xl w-2/3  ">
+                        <img src="images/help.png" alt="Help">
+                        <label for="Help"> Help </label>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 items-center justify-center mt-10  ">
+                    <img src="settings.png" alt="Settings">
+                    <label for="Settings"> Settings </label>
+                </div>
+
+                <div class="flex gap-4 items-center justify-center mt-10 ">
+                    <img src="logout.png" alt="logout">
+                    <label for="logout"> Log out </label>
+                </div>
+
+            </div>
+
+            <div
+                class="bg-slate-100 w-5/6 flex flex-col custom-width  custom-flex-edit-width ">
+
+                <div class="w-full flex">
+
+                    <div class="w-1/2 flex flex-row">
+
+                        <div class="relative h-12 m-5" style="width: 70%;">
+                            <input
+                                class="w-full h-full pl-12 pr-4 rounded-3xl shadow-2xl border-2 border-gray-700"
+                                type="search" id="search" name="search"
+                                placeholder="Search...">
+                            <img
+                                class="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6"
+                                src="search.png" alt="Search Icon">
+                        </div>
+                    </div>
+                    <div
+                        class="w-1/2 flex flex-row-reverse h-12 m-5 gap-2 mr-4">
+                        <img src="profile.png" alt srcset>
+
+                        <img src="notification.png" alt="notification" srcset>
+
+                    </div>
+                </div>
+                <hr class="w-full"
+                    style="border: rgb(167, 163, 163) solid 0.1rem;">
+
+                <div class="w-full flex gap-3 items-center">
+                    <img src="profile.png" alt srcset> /
+                    <span class="font-semibold">Inventory</span>
+                </div>
+
+                <hr class="w-full"
+                    style="border: rgb(167, 163, 163) solid 0.1rem;">
+
+                <div class="w-full ">
+                    <div
+                        class="flex flex-col sm:flex-row justify-between items-center"
+                        style="margin: 0 1.8rem; margin-top: 1.8rem;">
+                        <p>
+                            <span
+                                class="font-semibold text-2xl max-md:text-xl">New
+                                Inventory Item</span>
+                        </p>
+                        <div class="flex flex-row gap-3 ">
+                            <input type="submit" value="Save as Draft"
+                                class="px-7 py-3 text-white rounded-2xl max-md:py-2"
+                                style="background-color: #26599F;">
+                            <input type="submit" value="Save & Publish"
+                                class="px-7 text-white rounded-2xl"
+                                style="background-color: #26599F;">
+                        </div>
+                    </div>
+                </div>
+                <!-- Edit form -->
+                <div class="w-full flex  ">
+                    <form action method="post"
+                        class="w-full flex gap-3 max-h-full custom-flex-edit mx-3 ">
+
+                        <div
+                            class="w-3/4 bg-white rounded-2xl gap-3 m-3 flex flex-col custom-flex-edit-width">
+                            <div class="w-full mx-3 mt-3">
+                                <label for="name">Product Name</label>
+                            </div>
+                            <div class="w-full flex gap-5 custom-flex-form">
+                                <div
+                                    class="w-1/2 flex flex-col gap-3 custom-flex-edit-form  ">
+                                    <div class="w-full mx-4 mb-3">
+                                        <input type="text"
+                                            placeholder="iPhone 14 Pro"
+                                            class="w-full p-3 rounded-xl"
+                                            style="background-color: #D9D9D980;">
+                                    </div>
+                                    <div class="w-full  mx-4 mb-3">
+                                        <input type="text"
+                                            placeholder="Select product category"
+                                            class="w-full p-3 rounded-xl"
+                                            style="background-color: #D9D9D980;">
+                                    </div>
+                                    <div class="w-full flex gap-3  mx-4 mb-3 ">
+                                        <input type="text"
+                                            placeholder="Selling Price"
+                                            class="w-full p-3 rounded-xl"
+                                            style="background-color: #D9D9D980;">
+                                        <input type="text"
+                                            placeholder="Cost Price"
+                                            class="w-full p-3 rounded-xl"
+                                            style="background-color: #D9D9D980;">
+
+                                    </div>
+                                    <div class="w-full  mx-4 mb-3 ">
+                                        <input type="text"
+                                            placeholder="Quantity In Stock"
+                                            class="w-full p-3 rounded-xl"
+                                            style="background-color: #D9D9D980;">
+                                    </div>
+                                    <div class="w-full  mx-4 mb-3">
+                                        <input type="text"
+                                            placeholder="Order Type"
+                                            class="w-full p-3 rounded-xl"
+                                            style="background-color: #D9D9D980;">
+                                    </div>
+                                    <div
+                                        class="w-full  mx-4 mb-3 flex justify-between">
+                                        <label for="document">Document</label>
+                                        <div class="flex">
+                                            <label for="document">Add
+                                                Document</label>
+                                            <i
+                                                class="fa-regular fa-toggle-large-on"
+                                                style="color: #004376;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex gap-3  mx-4 mb-3 ">
+                                        <input type="text"
+                                            placeholder="Select product category"
+                                            class="w-full p-3 rounded-xl"
+                                            style="background-color: #D9D9D980;">
+                                        <input type="text"
+                                            placeholder="Select product category"
+                                            class="w-full p-3 rounded-xl"
+                                            style="background-color: #D9D9D980;">
+
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="w-1/2 flex flex-col gap-3 mr-2 custom-flex-edit-form  ">
+                                    <div class="w-full ">
+                                        <input type="text"
+                                            placeholder="Short description"
+                                            class="w-full p-10 rounded-xl"
+                                            style="background-color: #D9D9D980;">
+                                    </div>
+                                    <div class="w-full flex flex-col gap-2  ">
+                                        <label
+                                            for="Product deteail description">Product
+                                            Detail Description</label>
+                                        <textarea type="text"
+                                            placeholder="Add a detail description for your product..."
+                                            class="w-full h-48 p-3 rounded-xl"
+                                            style="background-color: #D9D9D980;"></textarea>
+                                    </div>
+                                    <div class="w-full flex gap-3 "
+                                        style="    margin-top: 0.5rem;">
+                                        <label for="return policy"
+                                            class="text-1xl">
+                                            Return Policy
+                                        </label>
+                                    </div>
+                                    <div class="w-full flex gap-3  "
+                                        style="    margin-top: 0.7rem;
+">
+                                        <input type="date" placeholder
+                                            class="w-full p-3 rounded-xl"
+                                            style="background-color: #D9D9D980;">
+                                        <input type="date"
+                                            placeholder="12:00 PM"
+                                            class="w-full p-3 rounded-xl"
+                                            style="background-color: #D9D9D980;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="w-1/4  bg-white rounded-2xl m-3 flex flex-col custom-flex-edit-width">
+                            <div
+                                class="w-full flex items-center justify-center ">
+                                <div
+                                    class="m-5 border w-full flex items-center justify-center">
+                                    <img src="images/product.png" alt="image"
+                                        class="h-48 rounded-t-2xl m-3">
+                                </div>
+                            </div>
+                            <div class="w-full flex flex-col">
+                                <label for="Additional Images" class="m-5 ">Additional Images </label>
+
+                                <div
+                                    class="w-full flex items-center justify-evenly gap-3 ">
+                                    <div
+                                        class="w-1/2 border flex items-center justify-center m-3 h-60 rounded-2xl">
+                                        <img src="images/product.png"
+                                            alt="image">
+                                    </div>
+                                    <div
+                                        class="w-1/2 border flex flex-col items-center justify-center m-3 h-60 rounded-2xl "
+                                        style="border: 1px solid #26599F; background-color: #D9D9D980;">
+                                        <img src="images/blur.png" alt="image">
+                                        <label for>Upload Images</label>
+                                    </div>
+                                </div>
+
+                                <div class="w-full flex ">
+                                    <div
+                                        class="w-1/2 border flex items-center justify-center m-3 h-60  rounded-2xl "
+                                        style="border: black dashed 0.1rem ;">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>       
+</html>
